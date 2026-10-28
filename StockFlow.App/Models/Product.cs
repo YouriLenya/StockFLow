@@ -16,4 +16,7 @@ public class Product
     public int Quantity { get; set; }
 
     public int MinimumStock { get; set; }
+
+    // Propriété calculée : état du stock
+    public bool IsLowStock => Quantity < MinimumStock;
 }
